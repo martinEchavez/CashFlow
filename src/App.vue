@@ -5,7 +5,7 @@ import SplashScreen from '@/components/SplashScreen.vue';
 const Home = defineAsyncComponent(() =>
   new Promise((resolve) => {
     setTimeout(() => {
-      resolve(import('./components/Home.vue'))
+      resolve(import('./components/Home.vue'));
     }, 2500)
   })
 )
@@ -14,10 +14,10 @@ const Home = defineAsyncComponent(() =>
 <template>
   <Suspense>
     <template #default>
-      <Home />  
+      <Home/>  
     </template>
     <template #fallback>
-      <SplashScreen />
+      <SplashScreen/>
     </template>
   </Suspense>
 </template>
