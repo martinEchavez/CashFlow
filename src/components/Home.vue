@@ -21,7 +21,14 @@ const date: Ref<Date | undefined> = ref( new Date(2024, 2, 11));
                 :date="date"
                 :amount=amount
                 :total-amount="2000000"
-            />
+            >
+            <template #graphic>
+                template
+            </template>
+            <template #action>
+                Action
+            </template>
+            </Resume>
         </template>
         <template #movements>
             <Movements />
